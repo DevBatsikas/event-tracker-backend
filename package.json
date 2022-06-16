@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "event-tracker-backend",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "nodemon -r dotenv/config src/server.mjs"
+  },
+  "imports": {
+    "#src/*": "./src/*",
+    "#routes/*": "./src/routes/*",
+    "#controllers/*": "./src/controllers/*"
+  },
+  "author": "DevBatsikas",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
