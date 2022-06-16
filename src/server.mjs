@@ -1,10 +1,10 @@
-import 'dotenv/config';
+// import 'dotenv/config';
 import express, { json } from 'express';
-//import cors from 'cors';
+// import cors from 'cors';
 
 // SETUP
 const app = express();
-//app.use(cors());
+// app.use(cors());
 app.use(json());
 
 // ROUTERS
